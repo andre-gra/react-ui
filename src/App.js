@@ -1,23 +1,16 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-import React, { useState} from "react";
+import React from 'react';
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+import CardGrid from './components/card-grid';
 
-const  App = () => {
-  const [count, setCount] = useState(0);
-
+function App() {
   return (
-    <div className="h-screen p-10 text-center">
-      <h1 className="text-4xl">A React Codepen Template with tailwind CSS</h1>
-      <p className="text-xl py-6">
-        You clicked the button <strong>{count}</strong> times.
-      </p>
-      <button
-        className="bg-yellow-200 font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider text-red-600 focus:outline-none"
-        onClick={() => setCount(count + 1)}
-      >
-        Click
-      </button>
+    <div className='w-full p-10'>
+      <DndProvider backend={HTML5Backend}>
+        <CardGrid />
+      </DndProvider>
     </div>
   );
-};
+}
 
 export default App;
