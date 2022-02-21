@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { useDrag, useDrop } from 'react-dnd';
-import ItemTypes from '../itemTypes';
+import ItemTypes from '../../itemTypes';
 
 function Card({
   title, topicNumber, className, Icon, id, index, moveCard,

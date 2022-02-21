@@ -1,7 +1,7 @@
 import React from 'react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import CardGrid from './components/card-grid';
+import CardGrid from './components/card-sorter/card-grid';
 
 function App() {
   return (

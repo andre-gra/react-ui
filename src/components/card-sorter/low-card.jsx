@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { useDrag, useDrop } from 'react-dnd';
-import ItemTypes from '../itemTypes';
+import ItemTypes from '../../itemTypes';
 
 function LowCard({
   title, className, Icon, id, index, moveLowCard,
